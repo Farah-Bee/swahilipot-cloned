@@ -1,5 +1,9 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
+
+{/* add custom font preloading - improves performance by reducing font-loading time
+  - CORS to allow loadin google fonts without sending cookies
+*/}
 export default function Document() {
   return (
     <Html lang="en">

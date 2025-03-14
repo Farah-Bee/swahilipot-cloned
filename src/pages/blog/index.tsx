@@ -4,7 +4,6 @@ import Articles from '@/components/blog/Articles';
 import SignupCTA from '@/components/blog/SignupCTA';
 
 export default function Blog() {
-  
   // This would typically come from your data file or CMS
   const featuredArticle = {
     title: "Christopher Mwalimo: My experience from being an attachee to working at Swahilipot Hub Foundation",
@@ -17,13 +16,13 @@ export default function Blog() {
     image: "/images/mwalimo.jpeg",
     slug: "my-story"
   };
-  
+
   return (
     <>
       <BlogHero />
-      <div className="py-12 bg-white dark:bg-dark-color">
+      <div className="py-12 bg-orange-50 dark:bg-gray-800 text-gray-900 dark:text-white"> {/* Light mode and dark mode background and text */}
         <div className="container-custom mx-auto">
-          <h2 className="text-2xl font-bold mb-6">Featured Article</h2>
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Featured Article</h2> {/* Heading color */}
           <FeaturedArticle 
             title={featuredArticle.title}
             excerpt={featuredArticle.excerpt} // pass the excerpt as a string

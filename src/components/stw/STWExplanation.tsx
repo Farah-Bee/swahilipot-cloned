@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function STWExplanation() {
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
+    <section className="py-16 bg-blue-50 dark:bg-gray-800">
       <div className="container-custom mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold mb-6">About Swahili Tech Women</h2>
@@ -37,7 +37,7 @@ export default function STWExplanation() {
           </div>
         </div>
         
-        <div className="bg-primary text-white p-8 rounded-lg">
+        <div className="bg-primary text-white p-8 rounded-lg dark:bg-gray-900 text-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">Why Women in Tech?</h3>

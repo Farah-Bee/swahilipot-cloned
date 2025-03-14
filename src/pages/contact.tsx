@@ -134,7 +134,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md">
+            <div className="bg-orange-50 dark:bg-gray-600 p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               
               {isSubmitted ? (
@@ -146,20 +146,20 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="bg-blue-100 p-6 rounded-lg shadow-lg transition-all duration-500">
                   <div className="mb-6">
-                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">Your Name *</label>
+                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-900 font-medium mb-2">Your Name *</label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white"
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white"
                       required
                     />
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">Your Email *</label>
+                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-900 font-medium mb-2">Your Email *</label>
                     <input
                       type="email"
                       id="email"
@@ -172,7 +172,7 @@ export default function Contact() {
                   </div>
 
                   <div className="mb-6">
-                    <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">Subject *</label>
+                    <label htmlFor="subject" className="block text-gray-700 dark:text-gray-900 font-medium mb-2">Subject *</label>
                     <input
                       type="text"
                       id="subject"
@@ -185,7 +185,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">Your Message *</label>
+                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-900 font-medium mb-2">Your Message *</label>
                     <textarea
                       id="message"
                       name="message"
@@ -207,7 +207,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-blue-50 dark:bg-gray-900">
   <div className="container-custom mx-auto">
     <h2 className="text-3xl font-bold mb-8 text-center">Find Us</h2>
     <div className="rounded-lg overflow-hidden shadow-md h-96">

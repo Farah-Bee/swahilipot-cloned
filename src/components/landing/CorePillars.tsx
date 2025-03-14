@@ -42,7 +42,7 @@ export default function CorePillars() {
               key={index}
               className={`p-6 rounded-lg shadow-md ${pillar.bgColor}`}
             >
-              <h3 className="text-lg font-bold text-grays-800 dark:text-white-100">
+              <h3 className="text-lg font-bold text-gray-800 dark:text-white-100">
                 {pillar.title}
               </h3>
               <p className="text-gray-700 mb-4 dark:text-white-300">
@@ -60,8 +60,8 @@ export default function CorePillars() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-300 dark:text-gray-400">Have a question?</p>
-          <a href="/contact" className="text-blue-400 hover:underline dark:text-blue-400">
+          <p className="text-gray-900 dark:text-gray-300">Have a question?</p>
+          <a href="/contact" className="text-blue-600 hover:underline dark:text-blue-400">
             Contact Us &gt;
           </a>
         </div>

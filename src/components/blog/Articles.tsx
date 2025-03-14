@@ -12,7 +12,7 @@ interface ArticleProps {
 
 function ArticleCard({ title, excerpt, author, date, image, slug, category }: ArticleProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className="h-48 overflow-hidden">
         <img
           src={image}
@@ -23,24 +23,24 @@ function ArticleCard({ title, excerpt, author, date, image, slug, category }: Ar
       <div className="p-6">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-primary font-medium">{date}</span>
-          <span className="text-xs bg-light px-2 py-1 rounded-full">{category}</span>
+          <span className="text-xs bg-light dark:bg-gray-600 px-2 py-1 rounded-full text-gray-700 dark:text-white">{category}</span>
         </div>
-        <h3 className="text-xl md:text-2xl font-semibold mb-3"> {/* Reduced by 30% */}
+        <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-900 dark:text-white"> {/* Title color for dark/light modes */}
           {title}
         </h3>
-        <p className="text-base md:text-lg text-gray-600 mb-4"> {/* Reduced by 30% */}
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
           {excerpt}
         </p>
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="w-8 h-8 rounded-full bg-gray-200 mr-2"></div>
-            <span className="text-sm text-gray-600">By {author}</span>
+            <div className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-600 mr-2"></div>
+            <span className="text-sm text-gray-600 dark:text-gray-300">By {author}</span>
           </div>
           <a
-            href="https://medium.com/@swahilipotengineering"
+            href={`/${slug}`} // Assuming `slug` is the unique identifier for the article
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary font-medium hover:underline"
+            className="text-primary font-medium hover:underline dark:text-blue-400"
           >
             Read more →
           </a>
@@ -76,15 +76,14 @@ export default function Articles() {
       excerpt: "Industrial Attachment Applications at Swahilipot Hub Foundation",
       author: "Chris Achinga",
       date: "April 4, 2024",
-      image:"/images/attach.jpeg",
+      image: "/images/attach.jpeg",
       slug: "IDUSTRIAL-attachment",
       category: "Indusrial Attachment"
     },
-    
   ];
 
   return (
-    <section className="py-16 bg-orange-100"> {/* Dull orange background */}
+    <section className="py-16 bg-orange-100 dark:bg-gray-900">
       <div className="container-custom mx-auto">
         {/* Display all 3 articles in a single grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,7 +108,7 @@ export default function Articles() {
               href="https://medium.com/@swahilipotengineering"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-md bg-blue-500 border border-gray-300 text-gray-700 hover:bg-gray-50"
+              className="px-4 py-2 rounded-md bg-blue-500 text-white font-semibold hover:bg-blue-600 transition-all duration-300 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Read more
             </a>

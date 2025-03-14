@@ -60,10 +60,10 @@ export default function MemberShipForm() {
   ];
 
   return (
-    <section className="py-16 bg-light dark:bg-gray-800">
+    <section className="py-16 bg-orange-50 dark:bg-gray-800">
       <div className="container-custom mx-auto">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md">
+          <div className="bg-blue-50 dark:bg-gray-700 p-8 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Membership Application</h2>
             
             {isSubmitted ? (
@@ -199,47 +199,7 @@ export default function MemberShipForm() {
                     required
                   ></textarea>
                 </div>
-                
-                <div className="mb-6">
-                  <label className="block text-gray-700 dark:text-gray-300 font-medium mb-2">Membership Type *</label>
-                  <div className="space-y-2">
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="membershipType"
-                        value="regular"
-                        checked={formData.membershipType === 'regular'}
-                        onChange={handleChange}
-                        className="mr-2"
-                        required
-                      />
-                      <div>
-                        <span className="font-medium">Regular Membership (Free)</span>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                          Access to community events, online resources, and basic networking opportunities.
-                        </p>
-                      </div>
-                    </label>
-                    
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="membershipType"
-                        value="premium"
-                        checked={formData.membershipType === 'premium'}
-                        onChange={handleChange}
-                        className="mr-2"
-                      />
-                      <div>
-                        <span className="font-medium">Premium Membership (KES 1,000/month)</span>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                          All regular benefits plus priority access to workshops, one-on-one mentorship, and exclusive career opportunities.
-                        </p>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                
+                                    
                 <div className="mb-6">
                   <label className="flex items-start">
                     <input

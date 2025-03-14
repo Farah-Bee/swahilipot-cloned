@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { motion } from 'framer-motion'
 
 interface DonateBtnProps {
   onLinkClick?: () => void;
@@ -6,12 +7,17 @@ interface DonateBtnProps {
 
 export default function DonateBtn({ onLinkClick }: DonateBtnProps) {
   return (
+
+    <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
     <Link
       href="/stwdonate/support-stw"
-      className="px-4 py-2 bg-primary text-white dark:bg-blue-600 rounded-lg hover:bg-primary/90 dark:hover:bg-blue-700 transition-colors"
+      className="inline-flex items-center px-8 py-3 text-white bg-primary rounded-full shadow-md
+      hover:bg-primary-dark dark:hover:bg-blue-600
+      transition-all duration-300 whitespace-nowrap"
       onClick={onLinkClick}
     >
       Donate
     </Link>
+    </ motion.div>
   );
 }

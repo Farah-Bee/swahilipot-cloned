@@ -16,11 +16,11 @@ export default function MombasaTourismPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-blue-50 dark:bg-gray-900">
+      <section className="py-16 bg-blue-50 dark:bg-gray-800">
         <div className="container-custom mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6">About</h2>
+              <h2 className="text-3xl font-bold mb-6">About Mombasa Tourism Innovation</h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
               The Mombasa innovation lab, hosted at Swahilipot Hub Foundation, seeks to inspire the interest of opportunity youth in Mombasa in culture and heritage tourism as a means of Job creation. The logic of change is underpinned by this quote from the Cabinet secretary Tourism and Wildlife.
 
@@ -42,7 +42,7 @@ export default function MombasaTourismPage() {
 
           
 
-          <div className="bg-primary text-white p-8 rounded-lg mb-16">
+          <div className="bg-primary text-white p-8 rounded-lg mb-16 dark:bg-gray-900">
   <div className="flex justify-center items-center text-center">
     <div>
       <h2 className="text-2xl font-bold mb-4">Our Objectives</h2>
@@ -67,11 +67,8 @@ export default function MombasaTourismPage() {
     </div>
   </div>
 </div>
-
-             
-            
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Apply</h2>
+    <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">Apply</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
             We are receiving proposals from organizations and business in tourism, hospitality, and cultural heritage that can benefit from the pilot.             </p>
 

@@ -39,24 +39,24 @@ export default function Origin() {
   ];
 
   return (
-    <section className="py-12 bg-blue-50">
+    <section className="py-12 bg-blue-50 dark:bg-gray-800">
       <div className="container-custom mx-auto">
         {/* Intro Section */}
         <div className="max-w-3xl mx-auto mb-8">
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
             How did Swahilipot Hub come to be?
           </h2>
-          <p className="text-base text-gray-700 mb-4">
+          <p className="text-base text-gray-700 dark:text-gray-300 mb-4">
             Why are all technology, innovation, and incubation hubs based in Nairobi? 
             Nairobi is not Kenya and Kenya is not Nairobi. Something has to change. 
             This was the “aha” moment that inspired the founding of Swahilipot.
           </p>
-          <p className="text-base text-gray-700 mb-4">
+          <p className="text-base text-gray-700 dark:text-gray-300 mb-4">
             In 2016, Mahmoud Noor (alias Mentor001) took action and founded Swahilipot 
             with support from the National Museums of Kenya (NMK), Seacom, ICT Authority, 
             and Cisco.
           </p>
-          <p className="text-base text-gray-700">
+          <p className="text-base text-gray-700 dark:text-gray-300">
             Swahilipot started as a community-based organization (CBO) with programs 
             focused on technology & innovation. It has grown over the years to become 
             a non-profit organization (NGO) with diverse program areas and an expanded reach.
@@ -64,11 +64,11 @@ export default function Origin() {
         </div>
 
         {/* Timeline Title (optional) */}
-        <h3 className="text-xl font-semibold mb-6 text-center">Timeline</h3>
+        <h3 className="text-xl font-semibold mb-6 text-center text-gray-800 dark:text-white">Timeline</h3>
 
         <div className="relative">
           {/* Vertical line down the center */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary" />
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary dark:bg-primary-dark" />
 
           {/* Timeline events with less vertical spacing */}
           <div className="space-y-8">
@@ -83,16 +83,16 @@ export default function Origin() {
                 <div className="w-1/4" />
 
                 {/* Main content occupies 3/4 */}
-                <div className="w-3/4 bg-orange-50 p-4 rounded-lg shadow-md">
-                  <div className="text-xs text-primary font-bold mb-1">
+                <div className="w-3/4 bg-orange-50 dark:bg-gray-900 p-4 rounded-lg shadow-md">
+                  <div className="text-xs text-primary dark:text-primary-light font-bold mb-1">
                     {event.year}
                   </div>
                   {event.title && (
-                    <h4 className="text-lg font-semibold mb-2">
+                    <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">
                       {event.title}
                     </h4>
                   )}
-                  <p className="text-sm text-gray-700">{event.description}</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">{event.description}</p>
                 </div>
               </div>
             ))}

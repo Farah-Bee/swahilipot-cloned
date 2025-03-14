@@ -9,7 +9,7 @@ interface StatsProps {
 
 export default function Stats({ stats }: StatsProps) {
   return (
-    <section className="py-16 bg-primary text-white">
+    <section className="py-16 bg-primary text-white dark:bg-gray-800 text-white">
       <div className="container-custom mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold mb-4">Our Impact in Numbers</h2> {/* Reduced font size from 3xl to 2xl */}

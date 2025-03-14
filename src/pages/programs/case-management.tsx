@@ -19,7 +19,7 @@ export default function CaseManagementPage() {
 
 
       
-      <section className="py-16 bg-blue-50 dark:bg-gray-900">
+      <section className="py-16 bg-blue-50 dark:bg-gray-800">
         <div className="container-custom mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div>
@@ -87,7 +87,7 @@ export default function CaseManagementPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+            <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
               <div className="text-4xl text-primary mb-4">🎯</div>
               <h3 className="text-xl font-semibold mb-3">Educational Support</h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -95,7 +95,7 @@ export default function CaseManagementPage() {
               </p>
             </div>
             
-            <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+            <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
               <div className="text-4xl text-primary mb-4">💼</div>
               <h3 className="text-xl font-semibold mb-3">Employment Assistance</h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -103,7 +103,7 @@ export default function CaseManagementPage() {
               </p>
             </div>
             
-            <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+            <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
               <div className="text-4xl text-primary mb-4">🏠</div>
               <h3 className="text-xl font-semibold mb-3">Life Skills Development</h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -121,7 +121,7 @@ export default function CaseManagementPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+              <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Refer a Youth</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   If you know a young person who could benefit from our program, please refer them to us.
@@ -131,7 +131,7 @@ export default function CaseManagementPage() {
                 </a>
               </div>
               
-              <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+              <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Volunteer</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   Share your skills and time as a mentor, tutor, or workshop facilitator for our program participants.
@@ -141,7 +141,7 @@ export default function CaseManagementPage() {
                 </a>
               </div>
               
-              <div className="bg-light dark:bg-gray-800 p-6 rounded-lg">
+              <div className="bg-orange-50 dark:bg-gray-900 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Donate</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   Support our program financially to help us reach more youth and provide the resources they need.

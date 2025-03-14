@@ -33,22 +33,23 @@ export default function PageContent() {
   ];
 
   return (
-    <section className="py-16 bg-orange-100"> {/* Changed background color to duller orange */}
+    <section className="py-16 bg-orange-100 dark:bg-gray-900 text-white dark:text-white">
       <div className="container-custom mx-auto">
         <div className="max-w-3xl mx-auto mb-12">
-          {/* Reduced font sizes by 20% */}
-          <h2 className="text-2xl font-bold mb-6 text-center">Why Join SwahiliPot Hub?</h2> {/* Adjusted font size */}
-          <p className="text-base text-gray-700 text-center"> {/* Adjusted font size */}
+          <h2 className="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">
+            Why Join SwahiliPot Hub?
+          </h2>
+          <p className="text-base text-gray-700 text-center dark:text-gray-300">
             SwahiliPot Hub offers a unique environment where technology, arts, and culture intersect. As a member, you'll have access to resources, opportunities, and a community that supports your growth and development.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-light p-8 rounded-lg">
-              <div className="text-3xl mb-4">{benefit.icon}</div> {/* Adjusted icon size */}
-              <h3 className="text-lg font-semibold mb-3">{benefit.title}</h3> {/* Reduced font size */}
-              <p className="text-gray-700 text-sm">{benefit.description}</p> {/* Reduced font size */}
+            <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">{benefit.icon}</div>
+              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-gray-100">{benefit.title}</h3>
+              <p className="text-gray-700 text-sm dark:text-gray-400">{benefit.description}</p>
             </div>
           ))}
         </div>

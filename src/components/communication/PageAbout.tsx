@@ -9,7 +9,7 @@ interface PageAboutProps {
 
 export default function PageAbout({ description, image, activities }: PageAboutProps) {
   return (
-    <section className="py-16 bg-blue-50 dark:bg-gray-800">
+    <section className="py-16 bg-blue-50 dark:bg-gray-900">
       <div className="container-custom mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>

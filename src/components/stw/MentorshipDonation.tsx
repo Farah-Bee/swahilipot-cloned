@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export default function MentorshipDonation() {
   return (
-    <section className="py-16 bg-blue-50 dark:bg-blue-900">
+    <section className="py-16 bg-orange-50 dark:bg-gray-900">
       <div className="container-custom mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Donation Package 1 */}
-          <div className="bg-orange-50 dark:bg-orange-600 p-6 rounded-lg shadow-lg">
+          <div className="bg-orange-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               KES 10,000 - Full Mentorship Support Package + A Packet of Pads
             </h3>
@@ -27,7 +27,7 @@ export default function MentorshipDonation() {
           </div>
 
           {/* Donation Package 2 */}
-          <div className="bg-orange-50 dark:bg-orange-200 p-6 rounded-lg shadow-lg">
+          <div className="bg-orange-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               KES 5,000 - Half Mentorship Support Package
             </h3>

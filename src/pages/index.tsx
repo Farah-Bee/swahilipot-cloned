@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SwahiliPot Hub - Empowering Innovation in East Africa</title>
+        <title>SwahiliPot Hub - Empowering Innovation in Coastal region</title>
         <meta name="description" content="SwahiliPot Hub is a collaborative space for technology, arts, and culture in Mombasa, Kenya." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <main>
         <HeroNew />

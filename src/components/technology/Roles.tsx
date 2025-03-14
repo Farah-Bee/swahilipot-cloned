@@ -15,7 +15,7 @@ export default function Roles({ roles }: RolesProps) {
   const bgClasses = ["bg-blue-50", "bg-orange-50", "bg-yellow-50"];
   
   return (
-    <section className="py-16 bg-light dark:bg-gray-800">
+    <section className="py-16 bg-light dark:bg-gray-900">
       <div className="container-custom mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold mb-4"> The Technology Department Roles</h2>

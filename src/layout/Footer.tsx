@@ -86,7 +86,7 @@ export default function Footer() {
               <p>SwahiliPot Hub Foundation</p>
               <p>Mombasa, Kenya</p>
               <p className="mt-2">
-                <a href="mailto:partnership@swahilipothub.co.ke" className="hover:text-yellow-400">partnership@swahilipothub.co.ke</a>
+                <a href="mailto:info@swahilipothub.co.ke" className="hover:text-yellow-400">info@swahilipothub.co.ke</a>
               </p>
               <p>
                 <a href="tel:+254114635505" className="hover:text-yellow-400">+254 11 4635505</a>

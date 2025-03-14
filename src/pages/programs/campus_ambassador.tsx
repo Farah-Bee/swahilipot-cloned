@@ -18,7 +18,7 @@ export default function CampusAmbassadorPage() {
     </section>
   
       
-      <section className="py-16 bg-blue-50 dark:bg-gray-900">
+      <section className="py-16 bg-blue-50 dark:bg-gray-800">
         <div className="container-custom mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div>

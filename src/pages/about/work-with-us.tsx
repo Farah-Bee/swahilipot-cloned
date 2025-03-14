@@ -87,7 +87,7 @@ export default function WorkWithUsPage() {
       <section className="py-16 bg-orange-50 dark:bg-gray-800">
         <div className="container-custom mx-auto">
           <div className="max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-center">Current Opportunities</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Current Opportunities</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
               Join our team and be part of our mission to empower youth through technology, arts, and culture.
             </p>
@@ -108,11 +108,11 @@ export default function WorkWithUsPage() {
           ))}
           
           <div className="bg-blue-50 dark:bg-gray-700 p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-2xl font-bold mb-6">Don't see a role that fits?</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Don't see a role that fits?</h2>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
               We're always looking for talented individuals who are passionate about our mission. If you don't see a role that matches your skills but believe you can contribute to SwahiliPot Hub, we'd love to hear from you.
             </p>
-            <a href="/contact" className="btn">
+            <a href="/contact" className="btn bg-primary text-white hover:bg-primary-dark">
               Contact Us
             </a>
           </div>

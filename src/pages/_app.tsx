@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // Add analytics tracking here if needed
     const handleRouteChange = (url: string) => {
-      // Example: track page view
+      // Detects when a user navigates between pages - cleans up event listeners when the component unmounts.
       console.log(`Page navigated to: ${url}`);
     };
 
@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
+  // every page (components) is wrapped inside layout - SEO metadata passed dynamically via pageProps
   return (
     <Layout
       title={pageProps.title}
