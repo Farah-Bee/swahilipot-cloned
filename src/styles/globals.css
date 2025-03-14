@@ -148,3 +148,55 @@ body {
       text-align: center;
   }
 }
+
+/* Accessibility Styles */
+.accessibility-btn {
+  @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors;
+}
+
+/* Text Spacing */
+body {
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  word-spacing: var(--text-spacing);
+}
+
+/* High Contrast */
+.high-contrast {
+  filter: contrast(150%);
+}
+
+/* Link Highlighting */
+.highlight-links a {
+  background-color: yellow !important;
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+/* Pause Animations */
+.pause-animations * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Hide Images */
+.hide-images img {
+  display: none !important;
+}
+
+/* Dyslexia Font */
+.dyslexia-font {
+  font-family: "OpenDyslexic", sans-serif !important;
+}
+
+/* Large Cursor */
+.large-cursor * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z'/%3E%3Cpath d='M13 13l6 6'/%3E%3C/svg%3E") 24 24, auto !important;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/opendyslexic@1.0.3/dist/regular/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

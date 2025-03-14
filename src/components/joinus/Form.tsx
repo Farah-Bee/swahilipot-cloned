@@ -156,7 +156,7 @@ export default function Form() {
                     name="interest"
                     value={formData.interest}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:bg-gray-600 dark:bg-gray-800 dark:text-white"
                     required
                   >
                     <option value="">Select an area of interest</option>

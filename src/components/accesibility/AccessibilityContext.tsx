@@ -1,14 +1,9 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+"use client";
+
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 interface AccessibilityContextType {
   fontSize: number;
-  textSpacing: boolean;
-  highContrast: boolean;
-  highlightLinks: boolean;
-  pauseAnimations: boolean;
-  hideImages: boolean;
-  dyslexiaFont: boolean;
-  largeCursor: boolean;
   setFontSize: (size: number) => void;
   toggleTextSpacing: () => void;
   toggleHighContrast: () => void;
@@ -21,19 +16,7 @@ interface AccessibilityContextType {
 
 const AccessibilityContext = createContext<AccessibilityContextType | undefined>(undefined);
 
-export function useAccessibility() {
-  const context = useContext(AccessibilityContext);
-  if (!context) {
-    throw new Error('useAccessibility must be used within an AccessibilityProvider');
-  }
-  return context;
-}
-
-interface AccessibilityProviderProps {
-  children: ReactNode;
-}
-
-export function AccessibilityProvider({ children }: AccessibilityProviderProps) {
+export function AccessibilityProvider({ children }: { children: React.ReactNode }) {
   const [fontSize, setFontSize] = useState(16);
   const [textSpacing, setTextSpacing] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
@@ -48,43 +31,68 @@ export function AccessibilityProvider({ children }: AccessibilityProviderProps) 
   }, [fontSize]);
 
   useEffect(() => {
-    document.body.classList.toggle('increased-spacing', textSpacing);
+    if (textSpacing) {
+      document.documentElement.style.setProperty('--text-spacing', '1.5');
+      document.documentElement.style.setProperty('--line-height', '1.8');
+      document.documentElement.style.setProperty('--letter-spacing', '0.12em');
+    } else {
+      document.documentElement.style.removeProperty('--text-spacing');
+      document.documentElement.style.removeProperty('--line-height');
+      document.documentElement.style.removeProperty('--letter-spacing');
+    }
   }, [textSpacing]);
 
   useEffect(() => {
-    document.body.classList.toggle('high-contrast', highContrast);
+    if (highContrast) {
+      document.documentElement.classList.add('high-contrast');
+    } else {
+      document.documentElement.classList.remove('high-contrast');
+    }
   }, [highContrast]);
 
   useEffect(() => {
-    document.body.classList.toggle('highlight-links', highlightLinks);
+    if (highlightLinks) {
+      document.documentElement.classList.add('highlight-links');
+    } else {
+      document.documentElement.classList.remove('highlight-links');
+    }
   }, [highlightLinks]);
 
   useEffect(() => {
-    document.body.classList.toggle('pause-animations', pauseAnimations);
+    if (pauseAnimations) {
+      document.documentElement.classList.add('pause-animations');
+    } else {
+      document.documentElement.classList.remove('pause-animations');
+    }
   }, [pauseAnimations]);
 
   useEffect(() => {
-    document.body.classList.toggle('hide-images', hideImages);
+    if (hideImages) {
+      document.documentElement.classList.add('hide-images');
+    } else {
+      document.documentElement.classList.remove('hide-images');
+    }
   }, [hideImages]);
 
   useEffect(() => {
-    document.body.classList.toggle('dyslexia-friendly', dyslexiaFont);
+    if (dyslexiaFont) {
+      document.documentElement.classList.add('dyslexia-font');
+    } else {
+      document.documentElement.classList.remove('dyslexia-font');
+    }
   }, [dyslexiaFont]);
 
   useEffect(() => {
-    document.body.classList.toggle('large-cursor', largeCursor);
+    if (largeCursor) {
+      document.documentElement.classList.add('large-cursor');
+    } else {
+      document.documentElement.classList.remove('large-cursor');
+    }
   }, [largeCursor]);
 
   const value = {
     fontSize,
-    textSpacing,
-    highContrast,
-    highlightLinks,
-    pauseAnimations,
-    hideImages,
-    dyslexiaFont,
-    largeCursor,
-    setFontSize: (size: number) => setFontSize(size),
+    setFontSize,
     toggleTextSpacing: () => setTextSpacing(prev => !prev),
     toggleHighContrast: () => setHighContrast(prev => !prev),
     toggleHighlightLinks: () => setHighlightLinks(prev => !prev),
@@ -99,4 +107,12 @@ export function AccessibilityProvider({ children }: AccessibilityProviderProps) 
       {children}
     </AccessibilityContext.Provider>
   );
+}
+
+export function useAccessibility() {
+  const context = useContext(AccessibilityContext);
+  if (context === undefined) {
+    throw new Error('useAccessibility must be used within an AccessibilityProvider');
+  }
+  return context;
 }
